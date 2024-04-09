@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheel of Creativity</title>
+
+    <!-- Include our style.css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Wheel! Of! Creativity!</h1>
+
+    1. 
+    Upload CSV file with 4 columns (groups) of terms<br><br>
+    <input type="file" id="csvFileInput" accept=".csv">
+    <br>
+    
+    <div id="csvData" style="display:none;">
+    <table id="wordgroupsTable">
+        <tr>
+            <td style="white-space:pre;" ><h3>Group 1</h3><div id="group1_list"></div></td>
+            <td style="white-space:pre;" ><h3>Group 2</h3><div id="group2_list"></div></td>
+            <td style="white-space:pre;" ><h3>Group 3</h3><div id="group3_list"></div></td>
+            <td style="white-space:pre;" ><h3>Group 4</h3><div id="group4_list"></div></td>
+        </tr>
+    </table>
+    </div>
+
+    <br><br><br>
+
+    2. Click here: <button onclick="randomizeWords()">Randomize</button>
+    <br><br><br><br>
+    3. Your path to creativity begins here:<br>
+    <div class="result-container">
+        <div id="result1" class="result-div"></div>
+        <div id="result2" class="result-div"></div>
+        <div id="result3" class="result-div"></div>
+        <div id="result4" class="result-div"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
