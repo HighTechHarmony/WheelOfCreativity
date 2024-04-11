@@ -3,7 +3,26 @@
 let group1 = [];
 let group2 = [];
 let group3 = [];
-let group4 = [];    
+let group4 = [];
+
+// Load example data into the input fields
+function loadExampleData () {
+    group1 = ['Funk', 'Punk', 'Retrowave', 'Americana', 'Rock', 'Dance/EDM', 'Jazzy', 'Salsa'];
+    group2 = ['Uptempo (110-120)', 'Chill (70-90)', 'Workout (120-130)', 'Mid tempo (90-110)'];
+    group3 = ['Trippy', 'Depressing', 'Uplifting', 'Pissed off'];
+    group4 = ['Acoustic Guitar', 'Electric Guitar', 'Roland  JV-1080', 'DR-Rhythm Drum Machine', 'Banjo', 'Mando', 'BFD grooves'];
+
+    // Unhide the csvData div to display the input data for the user
+    document.getElementById('csvData').style.display = 'block';
+
+    // Display the random words in the div group1_list, group2_list, group3_list, group4_list, nicely formatted
+    document.getElementById('group1_list').textContent = group1.join('\n');
+    document.getElementById('group2_list').textContent = group2.join('\n');
+    document.getElementById('group3_list').textContent = group3.join('\n');
+    document.getElementById('group4_list').textContent = group4.join('\n');
+}
+
+
 
 document.getElementById('csvFileInput').addEventListener('change', handleFileUpload);
 
